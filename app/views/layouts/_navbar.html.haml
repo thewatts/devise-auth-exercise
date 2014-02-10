@@ -14,3 +14,8 @@
         %a{href: "/users"} Users
       %li
         %a{href: "/orders"} Orders
+      %li
+        - if current_user
+          = link_to "Logout", destroy_user_session_path
+        - else
+          = link_to "Login", new_user_session_path

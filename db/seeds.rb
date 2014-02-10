@@ -9,7 +9,9 @@ class Seed
     50.times do |i|
       user = User.create!(
         name: Faker::Name.name,
-        email: Faker::Internet.email
+        email: Faker::Internet.email,
+        password: "wootwoot", 
+        password_confirmation: "wootwoot"
         )
       puts "User #{i}: #{user.name} - #{user.email} created!"
     end

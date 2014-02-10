@@ -12,6 +12,7 @@ gem 'faker'
 gem 'haml-rails'
 gem 'therubyracer'
 gem 'less-rails-bootstrap'
+gem 'devise'
 
 group :doc do
   gem 'sdoc', require: false
@@ -19,4 +20,5 @@ end
 
 group :development, :test do
   gem 'capybara'
+  gem 'jazz_hands'
 end
